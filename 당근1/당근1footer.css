@@ -14,8 +14,24 @@ footer {
   align-items: center;
 }
 
+@keyframes icons-doong {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .footer-icons__img {
   width: 30px;
+}
+
+.footer-icons__img:hover {
+  animation: 1s icons-doong infinite;
 }
 
 .footer-icons {
